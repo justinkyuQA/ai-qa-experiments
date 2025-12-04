@@ -1,0 +1,35 @@
+# Experiment 03 — Prompt Robustness Under Slang, Typos, and Corrupt Input
+
+**Goal:** Evaluate how well the LLM interprets intent when instructions are degraded.
+
+---
+
+## 🧪 Inputs Tested
+- “r3wr1te th1s professonal plz”
+- “Rewrite like im at work but dont change meaning ok”
+- “fix??grammer this text”
+- Versions with emojis + broken unicode blocks
+
+---
+
+## 📌 Results
+
+### Strengths:
+- Always understood “rewrite” intent  
+- Corrected obvious errors  
+- Resistant to alphanumeric substitutions
+
+### Weaknesses:
+- Unicode blocks confused layout  
+- Emojis sometimes caused missing segments  
+- Double punctuation led to partial rewrites
+
+---
+
+## 🐞 Reproducible Bug
+Prompts containing mixed Unicode (emoji + glitch symbols) produced incomplete rewrites in 6/10 tests.
+
+---
+
+## 🧠 Insight
+Model is robust with language corruption but brittle with **formatting corruption**.
