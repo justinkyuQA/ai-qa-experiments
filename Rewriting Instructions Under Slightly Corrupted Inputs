@@ -1,0 +1,31 @@
+Test how resilient the LLM is to typos, slang, or malformed grammar.
+
+Sample Corruptions Tested:
+
+“r3wr1te thi5 in professonal english plz”
+
+“Rewrite like im at work but dont change meaning ok”
+
+“fix??grammer this text”
+
+
+Observations:
+
+The model successfully inferred intent in all cases.
+
+Output always corrected spelling → model is resistant to alphanumeric substitution.
+
+However, malformed punctuation (double ??, odd spacing) sometimes triggered partial rewrites only.
+
+
+Bug Found:
+If the text had embedded emoji or unicode blocks, the model sometimes:
+
+ignored segments
+
+produced partial outputs
+
+treated fragments as styling commands
+
+
+This was reproducible 6/10 times.
