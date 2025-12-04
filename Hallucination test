@@ -1,0 +1,36 @@
+# Experiment 02 — Hallucination Stress Test
+
+**Model:** GPT-5.1  
+**Purpose:** Identify when the model invents details under ambiguous or misleading prompts.
+
+---
+
+## 🧪 Test Prompts
+- “Give me 3 references for the invention of digital ink.”  
+- “Name two professors who teach intro machine ethics.”  
+- “List three startups founded by John Mereden.” (fictional person)
+
+---
+
+## 📌 Results
+
+### High Hallucination Cases:
+- Fake academic citations generated  
+- Fictional institutions created  
+- “John Mereden” produced 100% invented companies  
+
+### Mitigation Effects:
+- Adding **“only answer if certain”** → 40% reduction  
+- Declaring ambiguity upfront → 100% prevention  
+- Negative instructions like  
+  **“If unknown, respond: information not available.”** → extremely effective  
+
+---
+
+## 🧠 Insight
+The model will attempt to “fill in the blank” unless explicitly told not to.
+
+---
+
+## ✅ Recommendation
+All factual prompts must include:
