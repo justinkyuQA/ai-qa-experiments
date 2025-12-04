@@ -1,0 +1,24 @@
+# Experiment 05 — User-Perceived Latency vs Creativity Settings
+
+**Goal:**  
+Determine how creativity settings affect generation speed and user satisfaction.
+
+---
+
+## 📎 Findings
+
+### High Creativity (temp=0.8, top_p=0.95)
+- 23–40% slower token output  
+- Users perceived delay as “thoughtful,” not broken  
+- Not ideal for numerical or factual data
+
+### Low Creativity (temp=0–0.2)
+- Fastest responses  
+- Users preferred for instructions, summaries, lists
+
+---
+
+## 🎯 Recommendation
+- Auto-switch creativity settings based on task type  
+- Low-temp for structured tasks  
+- High-temp only for story generation
