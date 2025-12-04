@@ -1,0 +1,23 @@
+# Experiment 04 — Persona Stability Test (150-Turn Conversation)
+
+**Objective:**  
+Determine how long an LLM can maintain a defined persona without drifting.
+
+---
+
+## 🧪 Procedure
+- Set persona: “Technical QA Engineer”
+- 150-turn conversation
+- Injected casual, emotional, and off-topic questions at random intervals
+
+---
+
+## 📌 Drift Observations
+- Turn ~60: tone softened, less technical  
+- Turn ~110: began giving subjective opinions  
+- Prompt reinforcement restored persona immediately  
+
+---
+
+## 🎯 Conclusion
+Long conversations require periodic **persona restatement** to prevent drift.
