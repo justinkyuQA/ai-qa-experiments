@@ -1,0 +1,20 @@
+Evaluate whether the model can maintain a consistent "Technical QA Engineer" persona over long conversations.
+
+Protocol:
+
+150-message conversation simulating a QA debugging chat.
+
+Interspersed with casual questions designed to pull the model off persona.
+
+
+Drift Points Identified:
+
+At ~turn 60: subtle shift from technical tone into conversational tone.
+
+At ~turn 110: began giving unexplained opinions rather than analytical statements.
+
+After system-reset prompt → persona re-stabilized.
+
+
+Actionable Insight:
+Include periodic persona reinforcement prompts for any long-running sessions.
