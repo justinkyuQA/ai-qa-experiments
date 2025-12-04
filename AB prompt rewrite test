@@ -1,0 +1,29 @@
+# Experiment 06 — A/B Prompt Test (Rewrite Tool)
+
+**Compared:**  
+- Template v3.2  
+- Template v4.0
+
+---
+
+## 📊 Evaluation Metrics
+- Grammar accuracy  
+- Faithfulness to original meaning  
+- Smoothness / readability  
+- Hallucination rate  
+- User approval ratings
+
+---
+
+## 📌 Results Summary
+
+### Template v4.0:
+- 18% fewer distortions  
+- Slightly longer but cleaner sentences  
+- Zero hallucinations  
+- 72% user preference
+
+---
+
+## 🎯 Recommendation
+Deploy v4.0 as default rewrite prompt template.
