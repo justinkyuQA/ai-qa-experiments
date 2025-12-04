@@ -1,0 +1,56 @@
+# Experiment 01 — System Message & Temperature Consistency Test
+
+**Date:** 2025-01-12  
+**Model Tested:** GPT-5.1  
+**Prepared By:** Justin Quessenberry  
+
+---
+
+## 🎯 Objective
+Evaluate how system instructions and temperature values affect the **consistency and reliability** of structured LLM outputs.
+
+---
+
+## 🧪 Method
+
+**Prompt Used (x15):**  
+“Summarize this product review in 3 concise bullet points.”
+
+**Variables Tested:**
+- Temperatures: `0.0`, `0.4`, `0.8`
+- System Prompts:
+  1. Neutral Assistant
+  2. Concise Professional Writer
+  3. Technical Analyst
+
+For each combination, ran 5 outputs and compared:
+- Structure similarity  
+- Word overlap  
+- Consistency  
+- Hallucination rate  
+
+---
+
+## 📊 Results Summary
+
+### Temperature 0.0
+- 94% structural consistency  
+- Minimal synonym changes  
+- No hallucinations  
+- Most stable for repetitive tasks
+
+### Temperature 0.4
+- Noticeable tone variation  
+- Content remained accurate  
+- Good for light creativity
+
+### Temperature 0.8
+- High drift  
+- Frequent imaginative details  
+- Unusable for strict tasks
+
+---
+
+## 🔍 Key Insights
+- **System prompt affects tone**.  
+  
