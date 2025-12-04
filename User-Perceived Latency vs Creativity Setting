@@ -1,0 +1,14 @@
+Analyze how users perceive delay when the model generates longer creative text.
+
+Key Findings:
+
+Creative settings (temp=0.8, top_p=0.95) produced a 23–40% increase in token time.
+
+Users interpreted the increased generation time as “thinking,” not “lag.”
+
+However → requests with numerical tasks + high creativity = confusing delays with no quality benefit.
+
+
+Conclusion:
+Auto-adjust creativity to low for structured tasks, high for story tasks.
+
